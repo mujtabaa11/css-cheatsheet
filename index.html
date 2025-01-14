@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>CSS Cheat Sheet</h1>
+  </header>
+
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search for a topic...">
+    </div>
+
+    <div id="cheatSheet">
+      <div class="section">
+        <div class="section-header">
+          <h2>1. Fonts and Text Styling</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Font Sizes: px, pt, em, rem</li>
+            <li>Font Weights: light, bold, lighter, bolder, 100-900</li>
+            <li>Font Families: serif, sans-serif</li>
+            <li>Text Properties: text-align, text-decoration</li>
+            <li>Lists: list-style-type</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <h2>2. Colors</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Hexadecimal: #RRGGBB</li>
+            <li>Hex with Transparency: #RRGGBBAA</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Additional sections can be added here following the same structure -->
+      <div class="section">
+        <div class="section-header">
+          <h2>3. Box Model</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Margin: Outside spacing</li>
+            <li>Padding: Inside spacing</li>
+            <li>Border: Defines box boundary</li>
+            <li>Box-sizing: border-box includes padding and border in width/height</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-header">
+          <h2>4. Units</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Absolute: px, pt, in</li>
+            <li>Relative: %, em, rem, vw, vh</li>
+            <li>Auto: size based on content</li>
+            <li>Fit-content: adjusts size to fit content</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-header">
+          <h2>5. Selectors</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Grouping: "," for shared styles</li>
+            <li>Descending: " " for all descendants</li>
+            <li>Direct children: ">"</li>
+            <li>Pseudo-selectors: :hover, :active, :focus</li>
+            <li>Attribute-based: [attribute=value]</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-header">
+          <h2>6. Positioning</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Static: Default, no positioning</li>
+            <li>Relative: Adjust relative to normal position</li>
+            <li>Absolute: Relative to nearest positioned ancestor</li>
+            <li>Fixed: Relative to viewport</li>
+            <li>Sticky: Behaves like relative until scroll threshold</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-header">
+          <h2>7. Flexbox</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Flex-direction: row, column</li>
+            <li>Flex-wrap: wrap for responsiveness</li>
+            <li>Justify-content: Align on main axis</li>
+            <li>Align-items: Align on cross axis</li>
+            <li>Gap: Space between items</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-header">
+          <h2>8. Grid</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Define grid with template-rows and template-columns</li>
+            <li>Place items with grid-row and grid-column</li>
+            <li>Span items across rows/columns</li>
+            <li>Gap: Space between grid items</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-header">
+          <h2>9. Transitions and Animations</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Transitions: property duration timing-function delay</li>
+            <li>Animations: Use @keyframes for complex effects</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-header">
+          <h2>10. Responsiveness</h2>
+          <span>+</span>
+        </div>
+        <div class="section-content">
+          <ul>
+            <li>Media Queries: @media (max-width: x)</li>
+            <li>Flexbox and Grid for adaptive layouts</li>
+            <li>Use relative units (%, rem, vw, vh)</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+</html>
