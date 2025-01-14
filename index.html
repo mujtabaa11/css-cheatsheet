@@ -17,9 +17,11 @@
   <div class="container">
     <div class="search-box">
       <input type="text" id="search" placeholder="Search for a topic...">
+      <button id="expandAll">Expand All</button>
     </div>
 
     <div id="cheatSheet">
+      <!-- Section 1 -->
       <div class="section">
         <div class="section-header">
           <h2>1. Fonts and Text Styling</h2>
@@ -27,15 +29,87 @@
         </div>
         <div class="section-content">
           <ul>
-            <li>Font Sizes: px, pt, em, rem</li>
-            <li>Font Weights: light, bold, lighter, bolder, 100-900</li>
-            <li>Font Families: serif, sans-serif</li>
-            <li>Text Properties: text-align, text-decoration</li>
-            <li>Lists: list-style-type</li>
+            <li>
+              <div class="sub-section">
+                <div class="sub-header">
+                  <h3><strong>1.1 Font Sizes:</strong> px, pt, em, rem</h3>
+                  <span>+</span>
+                </div>
+                <div class="sub-content">
+                  <p><strong>px:</strong> Absolute unit representing pixels.</p>
+                  <p><strong>pt:</strong> Points, commonly used in print.</p>
+                  <p><strong>em:</strong> Relative unit based on the font size of the parent.</p>
+                  <p><strong>rem:</strong> Relative to the root element's font size.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sub-section">
+                <div class="sub-header">
+                  <h3><strong>1.2 Font Weights:</strong> light, bold, lighter, bolder, 100-900</h3>
+                  <span>+</span>
+                </div>
+                <div class="sub-content">
+                  <p>Font weight determines the thickness of characters. Options include:</p>
+                  <ul>
+                    <li><strong>light:</strong> Lighter than normal.</li>
+                    <li><strong>bold:</strong> Thicker than normal.</li>
+                    <li><strong>100-900:</strong> Numeric weights, where 400 is normal, 700 is bold.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sub-section">
+                <div class="sub-header">
+                  <h3><strong>1.3 Font Families:</strong> serif, sans-serif</h3>
+                  <span>+</span>
+                </div>
+                <div class="sub-content">
+                  <p>Font families define the appearance of text. Common examples:</p>
+                  <ul>
+                    <li><strong>serif:</strong> Fonts with small lines at the ends of characters (e.g., Times New Roman).</li>
+                    <li><strong>sans-serif:</strong> Clean fonts without lines at the ends (e.g., Arial).</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sub-section">
+                <div class="sub-header">
+                  <h3><strong>1.4 Text Properties:</strong> text-align, text-decoration</h3>
+                  <span>+</span>
+                </div>
+                <div class="sub-content">
+                  <ul>
+                    <li><strong>text-align:</strong> Align text left, right, center, or justify.</li>
+                    <li><strong>text-decoration:</strong> Underline, overline, line-through, none.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sub-section">
+                <div class="sub-header">
+                  <h3><strong>1.5 Lists:</strong> list-style-type</h3>
+                  <span>+</span>
+                </div>
+                <div class="sub-content">
+                  <p>Define the marker style for lists:</p>
+                  <ul>
+                    <li><strong>disc:</strong> Default bullet style.</li>
+                    <li><strong>circle:</strong> Hollow circles.</li>
+                    <li><strong>square:</strong> Solid squares.</li>
+                    <li><strong>none:</strong> No marker.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-
+    
+      <!-- Section 2 -->
       <div class="section">
         <div class="section-header">
           <h2>2. Colors</h2>
@@ -43,132 +117,472 @@
         </div>
         <div class="section-content">
           <ul>
-            <li>Hexadecimal: #RRGGBB</li>
-            <li>Hex with Transparency: #RRGGBBAA</li>
+            <li>
+              <div class="sub-section">
+                <div class="sub-header">
+                  <h3><strong>2.1 Hexadecimal:</strong> #RRGGBB</h3>
+                  <span>+</span>
+                </div>
+                <div class="sub-content">
+                  <p>Defines colors using hexadecimal codes, where:</p>
+                  <ul>
+                    <li><strong>RR:</strong> Red component (00 to FF).</li>
+                    <li><strong>GG:</strong> Green component (00 to FF).</li>
+                    <li><strong>BB:</strong> Blue component (00 to FF).</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sub-section">
+                <div class="sub-header">
+                  <h3><strong>2.2 Transparency:</strong> #RRGGBBAA</h3>
+                  <span>+</span>
+                </div>
+                <div class="sub-content">
+                  <p>Add transparency with the alpha channel:</p>
+                  <ul>
+                    <li><strong>AA:</strong> Alpha component (00 to FF, where FF is opaque).</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sub-section">
+                <div class="sub-header">
+                  <h3><strong>2.3 CSS Functions:</strong> rgb(), rgba(), hsl(), hsla()</h3>
+                  <span>+</span>
+                </div>
+                <div class="sub-content">
+                  <p>Define colors with functional notations:</p>
+                  <ul>
+                    <li><strong>rgb(red, green, blue):</strong> Values range from 0 to 255.</li>
+                    <li><strong>rgba(red, green, blue, alpha):</strong> Adds transparency.</li>
+                    <li><strong>hsl(hue, saturation, lightness):</strong> Uses the HSL color model.</li>
+                    <li><strong>hsla(hue, saturation, lightness, alpha):</strong> Adds transparency to HSL.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
+    
+      <!-- Add similar sections (3 to 10) here -->
+    </div>
+    
 
-      <!-- Additional sections can be added here following the same structure -->
-      <div class="section">
-        <div class="section-header">
-          <h2>3. Box Model</h2>
-          <span>+</span>
+
+      <!-- Section 3 -->
+<div class="section">
+  <div class="section-header">
+    <h2>3. Box Model</h2>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <ul>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>3.1 Margins:</strong> margin</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Defines space outside the element's border:</p>
+            <ul>
+              <li><strong>margin-top:</strong> Space above the element.</li>
+              <li><strong>margin-right:</strong> Space to the right.</li>
+              <li><strong>margin-bottom:</strong> Space below.</li>
+              <li><strong>margin-left:</strong> Space to the left.</li>
+            </ul>
+          </div>
         </div>
-        <div class="section-content">
-          <ul>
-            <li>Margin: Outside spacing</li>
-            <li>Padding: Inside spacing</li>
-            <li>Border: Defines box boundary</li>
-            <li>Box-sizing: border-box includes padding and border in width/height</li>
-          </ul>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>3.2 Padding:</strong> padding</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Defines space inside the element, between content and border:</p>
+            <ul>
+              <li><strong>padding-top:</strong> Padding above the content.</li>
+              <li><strong>padding-right:</strong> Padding to the right.</li>
+              <li><strong>padding-bottom:</strong> Padding below.</li>
+              <li><strong>padding-left:</strong> Padding to the left.</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>3.3 Borders:</strong> border</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Defines the boundary of an element:</p>
+            <ul>
+              <li><strong>border-width:</strong> Thickness of the border.</li>
+              <li><strong>border-style:</strong> Solid, dotted, dashed, double, etc.</li>
+              <li><strong>border-color:</strong> Sets the border's color.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>3.4 Box Sizing:</strong> box-sizing</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Controls how the total width and height of the element is calculated:</p>
+            <ul>
+              <li><strong>content-box:</strong> Default, width and height include only the content.</li>
+              <li><strong>border-box:</strong> Includes padding and border in the width and height.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Section 4 -->
+<div class="section">
+  <div class="section-header">
+    <h2>4. Positioning</h2>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <ul>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>4.1 Static:</strong> static</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Default position; the element is positioned according to the normal document flow.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>4.2 Relative:</strong> relative</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>The element is positioned relative to its normal position.</p>
+            <ul>
+              <li><strong>top:</strong> Moves the element up or down.</li>
+              <li><strong>left:</strong> Moves the element left or right.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>4.3 Absolute:</strong> absolute</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>The element is positioned relative to the nearest positioned ancestor.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>4.4 Fixed:</strong> fixed</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>The element is positioned relative to the viewport and doesn't move when scrolling.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>4.5 Sticky:</strong> sticky</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>The element toggles between relative and fixed positioning based on scroll position.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Section 5 -->
+<div class="section">
+  <div class="section-header">
+    <h2>5. Flexbox</h2>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <ul>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>5.1 Display:</strong> flex</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Activates flexbox for the container:</p>
+            <ul>
+              <li><strong>flex-direction:</strong> Row (default), column, row-reverse, column-reverse.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>5.2 Justify Content:</strong> justify-content</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Defines alignment along the main axis:</p>
+            <ul>
+              <li><strong>flex-start:</strong> Align items to the start.</li>
+              <li><strong>center:</strong> Center items.</li>
+              <li><strong>space-between:</strong> Equal space between items.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>5.3 Align Items:</strong> align-items</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Align items along the cross axis:</p>
+            <ul>
+              <li><strong>stretch:</strong> Default, items stretch to fill.</li>
+              <li><strong>center:</strong> Center items.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>5.4 Flex Wrap:</strong> flex-wrap</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Determines whether items should wrap to the next line:</p>
+            <ul>
+              <li><strong>nowrap:</strong> No wrapping (default).</li>
+              <li><strong>wrap:</strong> Items wrap onto multiple lines.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
       
-      <div class="section">
-        <div class="section-header">
-          <h2>4. Units</h2>
-          <span>+</span>
+     <!-- Section 6 -->
+<div class="section">
+  <div class="section-header">
+    <h2>6. Grid</h2>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <ul>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>6.1 Display:</strong> grid</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Activates grid layout for the container:</p>
+            <ul>
+              <li><strong>grid-template-columns:</strong> Defines the column structure, e.g., repeat(3, 1fr).</li>
+              <li><strong>grid-template-rows:</strong> Defines the row structure, e.g., 100px auto 100px.</li>
+            </ul>
+          </div>
         </div>
-        <div class="section-content">
-          <ul>
-            <li>Absolute: px, pt, in</li>
-            <li>Relative: %, em, rem, vw, vh</li>
-            <li>Auto: size based on content</li>
-            <li>Fit-content: adjusts size to fit content</li>
-          </ul>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>6.2 Grid Gaps:</strong> gap</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Sets the spacing between grid items:</p>
+            <ul>
+              <li><strong>row-gap:</strong> Space between rows.</li>
+              <li><strong>column-gap:</strong> Space between columns.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      
-      <div class="section">
-        <div class="section-header">
-          <h2>5. Selectors</h2>
-          <span>+</span>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>6.3 Grid Areas:</strong> grid-area</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Assigns a grid item to a specific area:</p>
+            <ul>
+              <li><strong>grid-area:</strong> Uses named areas or row/column span.</li>
+              <li><strong>grid-template-areas:</strong> Defines the layout structure using area names.</li>
+            </ul>
+          </div>
         </div>
-        <div class="section-content">
-          <ul>
-            <li>Grouping: "," for shared styles</li>
-            <li>Descending: " " for all descendants</li>
-            <li>Direct children: ">"</li>
-            <li>Pseudo-selectors: :hover, :active, :focus</li>
-            <li>Attribute-based: [attribute=value]</li>
-          </ul>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>6.4 Grid Alignment:</strong> justify-items & align-items</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Aligns grid items within their cells:</p>
+            <ul>
+              <li><strong>justify-items:</strong> Aligns items along the row axis.</li>
+              <li><strong>align-items:</strong> Aligns items along the column axis.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      
-      <div class="section">
-        <div class="section-header">
-          <h2>6. Positioning</h2>
-          <span>+</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Section 7 -->
+<div class="section">
+  <div class="section-header">
+    <h2>7. Transitions and Animations</h2>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <ul>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>7.1 Transitions:</strong> transition</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Adds smooth changes between property values:</p>
+            <ul>
+              <li><strong>transition-property:</strong> Specifies the property to transition.</li>
+              <li><strong>transition-duration:</strong> Sets how long the transition lasts.</li>
+              <li><strong>transition-timing-function:</strong> Defines the speed curve (ease, linear, etc.).</li>
+            </ul>
+          </div>
         </div>
-        <div class="section-content">
-          <ul>
-            <li>Static: Default, no positioning</li>
-            <li>Relative: Adjust relative to normal position</li>
-            <li>Absolute: Relative to nearest positioned ancestor</li>
-            <li>Fixed: Relative to viewport</li>
-            <li>Sticky: Behaves like relative until scroll threshold</li>
-          </ul>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>7.2 Animations:</strong> animation</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Creates keyframe-based animations:</p>
+            <ul>
+              <li><strong>animation-name:</strong> Name of the keyframe animation.</li>
+              <li><strong>animation-duration:</strong> How long the animation runs.</li>
+              <li><strong>animation-iteration-count:</strong> Number of times it repeats.</li>
+              <li><strong>animation-timing-function:</strong> Speed curve of the animation.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      
-      <div class="section">
-        <div class="section-header">
-          <h2>7. Flexbox</h2>
-          <span>+</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Section 8 -->
+<div class="section">
+  <div class="section-header">
+    <h2>8. Responsive Design</h2>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <ul>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>8.1 Media Queries:</strong> @media</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Applies styles based on screen size or device features:</p>
+            <ul>
+              <li><strong>max-width:</strong> Applies when the screen width is less than or equal to the specified value.</li>
+              <li><strong>min-width:</strong> Applies when the screen width is greater than or equal to the specified value.</li>
+            </ul>
+          </div>
         </div>
-        <div class="section-content">
-          <ul>
-            <li>Flex-direction: row, column</li>
-            <li>Flex-wrap: wrap for responsiveness</li>
-            <li>Justify-content: Align on main axis</li>
-            <li>Align-items: Align on cross axis</li>
-            <li>Gap: Space between items</li>
-          </ul>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>8.2 Viewport Units:</strong> vw, vh</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Units based on viewport size:</p>
+            <ul>
+              <li><strong>vw:</strong> 1% of the viewport width.</li>
+              <li><strong>vh:</strong> 1% of the viewport height.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      
-      <div class="section">
-        <div class="section-header">
-          <h2>8. Grid</h2>
-          <span>+</span>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>8.3 Flexibility:</strong> flex and grid</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Uses flexible layouts to adjust content:</p>
+            <ul>
+              <li><strong>Flexbox:</strong> Responsive layout with flexible alignment.</li>
+              <li><strong>Grid:</strong> Complex layouts with defined grid areas.</li>
+            </ul>
+          </div>
         </div>
-        <div class="section-content">
-          <ul>
-            <li>Define grid with template-rows and template-columns</li>
-            <li>Place items with grid-row and grid-column</li>
-            <li>Span items across rows/columns</li>
-            <li>Gap: Space between grid items</li>
-          </ul>
+      </li>
+      <li>
+        <div class="sub-section">
+          <div class="sub-header">
+            <h3><strong>8.4 Relative Units:</strong> em, rem</h3>
+            <span>+</span>
+          </div>
+          <div class="sub-content">
+            <p>Units relative to other measurements:</p>
+            <ul>
+              <li><strong>em:</strong> Relative to the font size of the parent element.</li>
+              <li><strong>rem:</strong> Relative to the root font size.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      
-      <div class="section">
-        <div class="section-header">
-          <h2>9. Transitions and Animations</h2>
-          <span>+</span>
-        </div>
-        <div class="section-content">
-          <ul>
-            <li>Transitions: property duration timing-function delay</li>
-            <li>Animations: Use @keyframes for complex effects</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="section">
-        <div class="section-header">
-          <h2>10. Responsiveness</h2>
-          <span>+</span>
-        </div>
-        <div class="section-content">
-          <ul>
-            <li>Media Queries: @media (max-width: x)</li>
-            <li>Flexbox and Grid for adaptive layouts</li>
-            <li>Use relative units (%, rem, vw, vh)</li>
-          </ul>
-        </div>
-      </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
       
     </div>
   </div>
